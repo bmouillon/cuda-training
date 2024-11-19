@@ -17,7 +17,7 @@ static inline void check(cudaError_t err, const char* context) {
 #define CHECK(x) check(x, #x)
 
 __global__ void mykernel(float* r, const float* d, int n) {
-    // TO DO (Utiliser HUGEVALF pour encoder l'infini)
+    // TO DO (Utiliser HUGE_VALF pour encoder l'infini)
 }
 
 static inline int divup(int a, int b) {
